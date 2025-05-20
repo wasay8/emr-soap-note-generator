@@ -1,21 +1,21 @@
 ```markdown
-# 🩺 EMR SOAP Note Generator
+#  EMR SOAP Note Generator
 
 A clinical documentation assistant that generates structured **SOAP-format medical reports** (Subjective, Objective, Assessment, Plan) from Electronic Medical Record (EMR) data using **GPT-4 via LangChain**. Designed to follow documentation standards used in **North American hospitals**.
 
 ---
 
-## 🚀 Features
+##  Features
 
-- ✅ Supports structured patient, admission, diagnosis, and lab data
-- ✅ Generates formal SOAP notes with accurate medical interpretation
-- ✅ Groups lab values into standard panels (CBC, Metabolic, Urinalysis)
-- ✅ Uses GPT-4 with LangChain to produce high-quality clinical text
-- ✅ Streamlit UI for interactive exploration and report generation
+-  Supports structured patient, admission, diagnosis, and lab data
+-  Generates formal SOAP notes with accurate medical interpretation
+-  Groups lab values into standard panels (CBC, Metabolic, Urinalysis)
+-  Uses GPT-4 with LangChain to produce high-quality clinical text
+-  Streamlit UI for interactive exploration and report generation
 
 ---
 
-## 📊 Tech Stack
+##  Tech Stack
 
 - **Python** (Pandas, Streamlit)
 - **LangChain** + **OpenAI GPT-4**
@@ -25,7 +25,7 @@ A clinical documentation assistant that generates structured **SOAP-format medic
 
 ---
 
-## ⚙️ Installation
+##  Installation
 
 ```bash
 git clone https://github.com/your-username/emr-soap-note-generator.git
@@ -35,7 +35,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🔐 Environment Variables
+##  Environment Variables
 
 Create a `.env` file in the root directory:
 
@@ -45,7 +45,7 @@ OPENAI_API_KEY_2=your_openai_api_key
 
 ---
 
-## 🖥️ Usage
+##  Usage
 
 ```bash
 streamlit run app.py
@@ -58,19 +58,19 @@ streamlit run app.py
 
 ---
 
-## 📁 File Structure
+##  File Structure
 
 ```
-📁 emr-soap-note-generator/
+ emr-soap-note-generator/
 ├── app.py                  # Main Streamlit app
 ├── .env                   # Environment variables
 ├── requirements.txt       # Python dependencies
-├── 📁 data/                # Patient and lab data
+├──  data/                # Patient and lab data
 ```
 
 ---
 
-## 📌 Future Improvements
+##  Future Improvements
 
 * Add abnormal lab value highlighting
 * Auto-compare with reference ranges
@@ -79,7 +79,7 @@ streamlit run app.py
 
 ---
 
-## 🧑‍⚕️ Author
+##  Author
 
 **Abdul Wasay Siddiqui**
 Data Scientist | Applied ML & Healthcare AI
