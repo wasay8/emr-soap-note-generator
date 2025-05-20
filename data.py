@@ -18,7 +18,7 @@ df_labs['Lab Category'] = df_labs['Lab Category'].str.strip().str.upper()
 df_labs['LabName'] = df_labs['LabName'].str.strip()
 
 st.set_page_config(layout="wide")
-st.title("📋 EMR Data Viewer")
+st.title("EMR Data Viewer")
 
 # Patient Selection
 patient_id = st.selectbox("Select Patient ID", df_patients['PatientID'].unique())
@@ -29,21 +29,21 @@ admission_id = st.selectbox("Select Admission ID", admissions_for_patient['Admis
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    st.subheader("🧍 Patient Info")
+    st.subheader(" Patient Info")
     st.write(df_patients[df_patients['PatientID'] == patient_id].style.hide(axis="index"))
 
 with col2:
-    st.subheader("🏥 Admission Info")
+    st.subheader("Admission Info")
     st.write(admissions_for_patient[admissions_for_patient['AdmissionID'] == admission_id])
 
 with col3:
-    st.subheader("🩺 Diagnosis Info")
+    st.subheader(" Diagnosis Info")
     st.write(df_diagnoses[
         (df_diagnoses['PatientID'] == patient_id) & 
         (df_diagnoses['AdmissionID'] == admission_id)
     ])
 
-st.subheader("🧪 Lab Results")
+st.subheader(" Lab Results")
 st.dataframe(df_labs[
     (df_labs['PatientID'] == patient_id) & 
     (df_labs['AdmissionID'] == admission_id)
@@ -131,7 +131,7 @@ Generate only the completed SOAP report below.
 
     openai_key = os.getenv("OPENAI_API_KEY_2")
     if not openai_key:
-        return "❌ ERROR: OPENAI_API_KEY not found in environment."
+        return " ERROR: OPENAI_API_KEY not found in environment."
 
     llm = ChatOpenAI(temperature=0.4, model="gpt-4", openai_api_key=openai_key)
     messages = [
@@ -143,12 +143,12 @@ Generate only the completed SOAP report below.
     return response.content
 
 # Sidebar action
-st.sidebar.subheader("📝 Generate Clinical Report")
+st.sidebar.subheader(" Generate Clinical Report")
 if st.sidebar.button("Create Report"):
     with st.spinner("Generating report using GPT-4..."):
         report = generate_llm_report_langchain(patient_id, admission_id, df_diagnoses, df_labs)
         st.success("✅ Report Generated")
-        st.subheader("📄 Clinical Report")
+        st.subheader(" Clinical Report")
         st.text_area("Generated Report", value=report, height=400)
 
 
