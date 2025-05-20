@@ -1,31 +1,38 @@
-```markdown
-#  EMR SOAP Note Generator
-
-A clinical documentation assistant that generates structured **SOAP-format medical reports** (Subjective, Objective, Assessment, Plan) from Electronic Medical Record (EMR) data using **GPT-4 via LangChain**. Designed to follow documentation standards used in **North American hospitals**.
+Here is a clean and professional `README.md` file **without icons or emojis**, suitable for academic, clinical, or enterprise-grade repositories.
 
 ---
 
-##  Features
+````markdown
+# EMR SOAP Note Generator
 
--  Supports structured patient, admission, diagnosis, and lab data
--  Generates formal SOAP notes with accurate medical interpretation
--  Groups lab values into standard panels (CBC, Metabolic, Urinalysis)
--  Uses GPT-4 with LangChain to produce high-quality clinical text
--  Streamlit UI for interactive exploration and report generation
+This project is a clinical documentation assistant that generates structured **SOAP-format medical reports** (Subjective, Objective, Assessment, Plan) from Electronic Medical Record (EMR) data using **GPT-4 via LangChain**. It follows formal documentation standards used in North American hospitals.
 
 ---
 
-##  Tech Stack
+## Features
 
-- **Python** (Pandas, Streamlit)
-- **LangChain** + **OpenAI GPT-4**
-- Environment management via `.env`
-- Data visualizations using Streamlit’s `st.dataframe`
-
+- Parses structured EMR data including Patient, Admission, Diagnosis, and Lab records
+- Generates clinically accurate SOAP notes based on lab results and diagnoses
+- Groups lab values under standard medical panels (CBC, Metabolic Panel, Urinalysis)
+- Utilizes GPT-4 through LangChain for context-aware report generation
+- Provides an interactive user interface using Streamlit
 
 ---
 
-##  Installation
+## Tech Stack
+
+- Python
+- Pandas
+- Streamlit
+- LangChain
+- OpenAI GPT-4
+- dotenv for environment variable management
+
+---
+
+## Installation
+
+Clone the repository and install dependencies:
 
 ```bash
 git clone https://github.com/your-username/emr-soap-note-generator.git
@@ -35,9 +42,9 @@ pip install -r requirements.txt
 
 ---
 
-##  Environment Variables
+## Environment Variables
 
-Create a `.env` file in the root directory:
+Create a `.env` file in the root directory and add your OpenAI API key:
 
 ```env
 OPENAI_API_KEY_2=your_openai_api_key
@@ -45,43 +52,62 @@ OPENAI_API_KEY_2=your_openai_api_key
 
 ---
 
-##  Usage
+## Usage
+
+Run the Streamlit application:
 
 ```bash
 streamlit run app.py
 ```
 
-1. Select a Patient ID and Admission ID.
-2. View diagnosis and lab data.
-3. Click **"Create Report"** in the sidebar to generate a SOAP note.
-4. Copy or edit the report as needed.
+Steps:
+
+1. Select a Patient ID and Admission ID from dropdown menus.
+2. Review structured data including patient information, diagnoses, and labs.
+3. Click the "Create Report" button to generate a SOAP note.
+4. Review or copy the generated clinical report.
 
 ---
 
-##  File Structure
+## File Structure
 
 ```
- emr-soap-note-generator/
-├── app.py                  # Main Streamlit app
-├── .env                   # Environment variables
+emr-soap-note-generator/
+├── app.py                 # Main Streamlit application
+├── .env                   # API key configuration
 ├── requirements.txt       # Python dependencies
-├──  data/                # Patient and lab data
+├── data/                  # Input data files (patients, admissions, labs, diagnoses)
 ```
 
 ---
 
-##  Future Improvements
+## Future Improvements
 
-* Add abnormal lab value highlighting
-* Auto-compare with reference ranges
-* PDF export of generated reports
-* FHIR integration support
+* Automatic detection and highlighting of abnormal lab values
+* Inclusion of reference ranges alongside lab results
+* PDF and DOCX export of generated SOAP reports
+* Integration with FHIR-compatible EHR systems
 
 ---
 
-##  Author
+## Author
 
 **Abdul Wasay Siddiqui**
 Data Scientist | Applied ML & Healthcare AI
-[LinkedIn](https://www.linkedin.com/in/aws97/) • [Portfolio](#)
+[LinkedIn](https://www.linkedin.com/in/aws97/)
 
+---
+
+## License
+
+This project is licensed under the MIT License.
+
+```
+
+Let me know if you'd also like me to generate:
+- `requirements.txt`
+- `.env.example`
+- a minimal dataset structure for the `data/` folder
+
+I can provide those next.
+```
