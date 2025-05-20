@@ -2,9 +2,7 @@
 
 Here’s a professional and clean `README.md` template for your project **`emr-soap-note-generator`** — built to be suitable for open-source, portfolio, or even internal clinical tooling documentation.
 
----
 
-### 📄 `README.md`
 
 ```markdown
 # 🩺 EMR SOAP Note Generator
@@ -30,28 +28,6 @@ A clinical documentation assistant that generates structured **SOAP-format medic
 - Environment management via `.env`
 - Data visualizations using Streamlit’s `st.dataframe`
 
----
-
-## 🧠 Example Output
-
-```
-
-**SUBJECTIVE:**
-No subjective complaints documented.
-
-**OBJECTIVE:**
-The patient was diagnosed with diabetes mellitus. CBC shows mild anemia. CMP reveals high glucose (250 mg/dL). Urinalysis shows glucose and ketones.
-
-**ASSESSMENT:**
-Findings are consistent with poorly controlled diabetes mellitus. Mild anemia may be secondary to chronic disease.
-
-**PLAN:**
-
-1. Initiate insulin therapy.
-2. Repeat CBC in 48 hours.
-3. Refer to endocrinology.
-
-````
 
 ---
 
