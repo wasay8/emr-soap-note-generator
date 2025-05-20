@@ -1,8 +1,3 @@
-Here is a clean and professional `README.md` file **without icons or emojis**, suitable for academic, clinical, or enterprise-grade repositories.
-
----
-
-````markdown
 # EMR SOAP Note Generator
 
 This project is a clinical documentation assistant that generates structured **SOAP-format medical reports** (Subjective, Objective, Assessment, Plan) from Electronic Medical Record (EMR) data using **GPT-4 via LangChain**. It follows formal documentation standards used in North American hospitals.
@@ -96,18 +91,3 @@ emr-soap-note-generator/
 Data Scientist | Applied ML & Healthcare AI
 [LinkedIn](https://www.linkedin.com/in/aws97/)
 
----
-
-## License
-
-This project is licensed under the MIT License.
-
-```
-
-Let me know if you'd also like me to generate:
-- `requirements.txt`
-- `.env.example`
-- a minimal dataset structure for the `data/` folder
-
-I can provide those next.
-```
