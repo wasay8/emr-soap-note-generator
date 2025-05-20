@@ -1,9 +1,3 @@
-# emr-soap-note-generator
-
-Here’s a professional and clean `README.md` template for your project **`emr-soap-note-generator`** — built to be suitable for open-source, portfolio, or even internal clinical tooling documentation.
-
-
-
 ```markdown
 # 🩺 EMR SOAP Note Generator
 
